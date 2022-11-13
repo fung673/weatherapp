@@ -20,7 +20,7 @@ export default function Top() {
       .then(data => setWeather2(data))
   }, [])
 
-  console.log(weather2)
+  const data = weather
 
 
   return <div className="main">
@@ -39,7 +39,7 @@ export default function Top() {
 
     <div className="updateTime">
       <h1 className="time-title">更新時間</h1>
-      <h2>{weather.updateTime}</h2></div>
+      <h2>{data.updateTime?.replace('T', ' ').slice(0, 19)}</h2></div>
   </div>
 
 }
