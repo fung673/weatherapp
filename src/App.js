@@ -1,6 +1,8 @@
 import React from 'react';
 import Top from './component/top';
 import './App.css';
+import './images/cloud.png'
+import './images/rain.png'
 
 /**const url = "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=flw&lang=tc"
 async function getInfo() {
