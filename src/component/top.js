@@ -57,7 +57,7 @@ export default function Top() {
 
   function checkTmrIcon() {
     for (let i = 0; i < tmrIcon.length; i++) {
-      if (tmrIcon[i].length === 2) {
+      if (tmrIcon.length === 2) {
         return [<img src={require("../images/cloud.png")} className="cloud-icon" alt="cloud-icon" />,
         <img src={require("../images/rain.png")} className="rain-icon" alt="rain-icon" />]
       }
@@ -72,7 +72,7 @@ export default function Top() {
 
   function checkTdyIcon() {
     for (let i = 0; i < tdyIcon.length; i++) {
-      if (tdyIcon[i].length === 2) {
+      if (tdyIcon.length === 2) {
         return [<img src={require("../images/cloud.png")} className="cloud-icon" alt="cloud-icon" />,
         <img src={require("../images/rain.png")} className="rain-icon" alt="rain-icon" />]
       }
