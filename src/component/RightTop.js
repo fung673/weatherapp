@@ -18,18 +18,11 @@ export default function Righttop() {
   const com2 = weather3.temperature
   const temp = com2?.data[22].value
 
-
-
-
-
-
   return <div className='right-top-main'>
     <div className='gradient-border' id="box">
       <div className='humi'>現時濕度: {humidity}%</div>
       <div className='temp'>現時氣溫: {temp}°C</div>
-
     </div>
-
   </div>
 
 }
