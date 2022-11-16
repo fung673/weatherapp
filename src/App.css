@@ -64,20 +64,6 @@ body {
   margin-top: 25px;
 }
 
-/*.right-top-container {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  border: 1px solid black;
-  width: 250px;
-  height: 80px;
-  font-size: 2rem;
-  font-weight: 800;
-}*/
-
 
 #box {
   display: flex;
