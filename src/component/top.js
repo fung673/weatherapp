@@ -51,7 +51,6 @@ export default function Top() {
   } if (tdyRain === true) {
     tdyIcon.push('rain')
   }
-  else { tdyIcon = [] }
 
   console.log(tmrIcon)
 
@@ -69,6 +68,8 @@ export default function Top() {
       }
     }
   }
+
+  console.log(tdyIcon)
 
   function checkTdyIcon() {
     for (let i = 0; i < tdyIcon.length; i++) {
