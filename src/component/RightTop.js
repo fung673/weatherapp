@@ -24,7 +24,7 @@ export default function Righttop() {
 
 
   return <div className='right-top-main'>
-    <div className='right-top-container'>
+    <div className='gradient-border' id="box">
       <div className='humi'>現時濕度: {humidity}%</div>
       <div className='temp'>現時氣溫: {temp}°C</div>
 
