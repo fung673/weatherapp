@@ -52,8 +52,6 @@ export default function Top() {
     tdyIcon.push('rain')
   }
 
-  console.log(tmrIcon)
-
   function checkTmrIcon() {
     for (let i = 0; i < tmrIcon.length; i++) {
       if (tmrIcon.length === 2) {
@@ -68,8 +66,6 @@ export default function Top() {
       }
     }
   }
-
-  console.log(tdyIcon)
 
   function checkTdyIcon() {
     for (let i = 0; i < tdyIcon.length; i++) {
