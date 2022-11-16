@@ -1,5 +1,6 @@
 import React from 'react';
 import Top from './component/top';
+import Righttop from './component/RightTop';
 import './App.css';
 import './images/cloud.png'
 import './images/rain.png'
@@ -22,6 +23,7 @@ export default function App() {
 
   return (
     <div>
+      <Righttop />
       <Top />
     </div>
   )

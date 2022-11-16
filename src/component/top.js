@@ -22,6 +22,8 @@ export default function Top() {
       .then(data => setWeather2(data))
   }, [])
 
+
+
   const data = weather
 
   const tmr = weather.forecastDesc
