@@ -45,7 +45,6 @@ export default function Top() {
   } if (tmrRain === true) {
     tmrIcon.push('rain')
   }
-  else { tmrIcon = [] }
 
   if (tdyCloud === true) {
     tdyIcon.push('cloud')
@@ -54,20 +53,34 @@ export default function Top() {
   }
   else { tdyIcon = [] }
 
+  console.log(tmrIcon)
+
   function checkTmrIcon() {
     for (let i = 0; i < tmrIcon.length; i++) {
-      if (tmrIcon[i] === 'cloud' && 'rain') {
+      if (tmrIcon[i].length === 2) {
         return [<img src={require("../images/cloud.png")} className="cloud-icon" alt="cloud-icon" />,
         <img src={require("../images/rain.png")} className="rain-icon" alt="rain-icon" />]
+      }
+      else if (tmrIcon[i] === 'cloud') {
+        return <img src={require("../images/cloud.png")} className="cloud-icon" alt="cloud-icon" />
+      }
+      else if (tmrIcon[i] === 'rain') {
+        return <img src={require("../images/rain.png")} className="rain-icon" alt="rain-icon" />
       }
     }
   }
 
   function checkTdyIcon() {
     for (let i = 0; i < tdyIcon.length; i++) {
-      if (tdyIcon[i] === 'cloud' && 'rain') {
+      if (tdyIcon[i].length === 2) {
         return [<img src={require("../images/cloud.png")} className="cloud-icon" alt="cloud-icon" />,
         <img src={require("../images/rain.png")} className="rain-icon" alt="rain-icon" />]
+      }
+      else if (tdyIcon[i] === 'cloud') {
+        return <img src={require("../images/cloud.png")} className="cloud-icon" alt="cloud-icon" />
+      }
+      else if (tdyIcon[i] === 'rain') {
+        return <img src={require("../images/rain.png")} className="rain-icon" alt="rain-icon" />
       }
     }
   }
@@ -76,13 +89,13 @@ export default function Top() {
     <div className="top">
       <div className="todays">
         <h1 className="title">現時天氣 {checkTdyIcon()}</h1>
-        <h2>{weather.generalSituation}</h2></div>
+        <p className="paragraph">{weather.generalSituation}</p></div>
       <div className="tmr">
         <h1 className="title">明日天氣 {checkTmrIcon()} </h1>
-        <h2>{weather.forecastDesc}</h2></div>
+        <p className="paragraph">{weather.forecastDesc}</p></div>
       <div className="future">
         <h1 className="title">未來幾日天氣</h1>
-        <h2>{weather2.generalSituation}</h2></div>
+        <p className="paragraph">{weather2.generalSituation}</p></div>
     </div>
 
 
