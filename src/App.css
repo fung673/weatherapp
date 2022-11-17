@@ -37,6 +37,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
   font-size: 10px;
+  margin: 20px;
   margin-top: auto;
 }
 
@@ -53,6 +54,7 @@ body {
 .paragraph {
   font-weight: 530;
   font-size: 1.8rem;
+  line-height: 2;
 }
 
 
@@ -114,11 +116,12 @@ body {
 
 
 @media screen and (max-width:500px) {
+
   .top {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 15px;
+    gap: 50px;
   }
 
   .right-top-main {
@@ -129,13 +132,14 @@ body {
 
   .title {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: left;
   }
 
   .paragraph {
-    font-weight: 300;
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8;
   }
 
 
@@ -148,10 +152,10 @@ body {
   }
 
   .updateTime {
-    display: inline;
-    width: 500px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     font-size: 10px;
+    margin: 15px;
     margin-bottom: auto;
   }
 
