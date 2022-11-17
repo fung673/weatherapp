@@ -3,6 +3,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Helvetica", "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
 }
 
 body {
@@ -133,14 +134,14 @@ body {
   .title {
     margin: 5px;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: left;
   }
 
   .paragraph {
     margin: 5px;
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-weight: 800;
+    font-size: 1.2rem;
     line-height: 1.8;
   }
 
@@ -157,7 +158,6 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 10px;
-    margin: 15px;
     margin-bottom: auto;
   }
 
