@@ -111,3 +111,54 @@ body {
     background-position: 0% 50%;
   }
 }
+
+
+@media screen and (max-width:500px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .right-top-main {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .paragraph {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+
+  #box {
+    width: 35%;
+    height: auto;
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .updateTime {
+    display: inline;
+    width: 500px;
+    align-items: center;
+    font-size: 10px;
+    margin-bottom: auto;
+  }
+
+  .time-title {
+    font-size: 0.5rem
+  }
+
+
+
+}
