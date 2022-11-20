@@ -87,10 +87,10 @@ export default function Top() {
   return <div><div className="main">
     <div className="top">
       <div className="todays">
-        <h1 className="title">現時天氣 {checkTdyIcon()}</h1>
+        <h1 className="title">現時天氣{checkTdyIcon()}</h1>
         <p className="paragraph">{weather.generalSituation}</p></div>
       <div className="tmr">
-        <h1 className="title">明日天氣 {checkTmrIcon()} </h1>
+        <h1 className="title">明日天氣{checkTmrIcon()} </h1>
         <p className="paragraph">{weather.forecastDesc}</p></div>
       <div className="future">
         <h1 className="title">未來幾日天氣</h1>
