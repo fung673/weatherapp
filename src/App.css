@@ -17,6 +17,64 @@ body {
   justify-content: center;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nodot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  gap: 20px;
+  width: 500px;
+  height: 100px;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: medium solid rgb(39, 39, 39);
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  gap: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.warn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: medium solid rgb(39, 39, 39);
+  border-radius: 10px;
+  width: 250px;
+  height: 50px;
+  gap: 5px;
+
+}
+
+
+.homepng {
+  width: 30%;
+  height: auto;
+
+}
+
+.warnpng {
+  width: 20%;
+  height: 80%;
+}
+
 .title {
   font-weight: bold;
   font-size: 3rem;
@@ -116,7 +174,7 @@ body {
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:570px) {
 
   .top {
     display: flex;
@@ -125,11 +183,18 @@ body {
     gap: 50px;
   }
 
+  .navbar {
+    display: flex;
+    justify-content: center;
+    margin-right: 5px;
+  }
+
   .right-top-main {
     display: flex;
     justify-content: flex-end;
     margin-right: 5px;
   }
+
 
   .title {
     margin: 5px;

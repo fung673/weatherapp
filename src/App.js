@@ -1,4 +1,5 @@
 import React from 'react';
+import Warn from './component/warn';
 import Top from './component/top';
 import Righttop from './component/RightTop';
 import './App.css';
@@ -23,6 +24,7 @@ export default function App() {
 
   return (
     <div>
+      <Warn />
       <Righttop />
       <Top />
     </div>
