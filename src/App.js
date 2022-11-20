@@ -25,7 +25,6 @@ export default function App() {
   return (
     <div>
       <Warn />
-      <Righttop />
       <Top />
     </div>
   )
