@@ -520,9 +520,9 @@ body {
   .dayobject {
     margin: 5px;
     font-size: 0.8rem;
-    height: 220px;
-    width: 100px;
-    gap: 5px;
+    height: 250px;
+    width: 125px;
+    gap: 25px;
     justify-content: flex-start;
     text-align: left;
     transition: all 0.8s ease;
