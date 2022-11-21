@@ -101,7 +101,7 @@ body {
 
 .top {
   height: 700px;
-  max-width: 800px;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -201,7 +201,7 @@ body {
 
 .forecast-main {
   margin-top: 50px;
-  height: 1000px;
+  height: 500px;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -211,21 +211,23 @@ body {
 
 .forecast-container {
   margin: 20px;
-  border-radius: 15px;
+  border-radius: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  height: 300px;
-  width: 1500px;
+  height: 500px;
+  width: 2000px;
   list-style-type: none;
+  background-color: #d9dbff;
 
 }
 
 .dayobject {
-  border-radius: 30px;
-  height: 280px;
-  width: 430px;
+  border-radius: 50px;
+  height: 380px;
+  width: 330px;
+  margin: 0px 15px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -234,8 +236,8 @@ body {
   font-size: 1.2rem;
   font-weight: 800;
   gap: 35px;
+  padding: 15px;
   background-color: #d9dbff;
-  box-shadow: 5px 5px 2px lightblue;
 
 }
 
@@ -246,10 +248,9 @@ body {
 
 
 
-
-
-
-
+.card {
+  display: none;
+}
 
 
 
@@ -270,6 +271,44 @@ body {
   }
 }
 
+@media screen and (max-width:2000px) {
+  .forecast-main {
+    border: medium solid saddlebrown;
+    height: 1000px;
+  }
+
+  .forecast-container {
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 850px;
+    max-width: 100%;
+    padding: 0px;
+    list-style-type: none;
+    background-color: #d9dbff;
+    flex-wrap: wrap;
+
+  }
+
+  .dayobject {
+
+    border-radius: 50px;
+    height: 235px;
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    font-weight: 800;
+    gap: 10px;
+    background-color: #d9dbff;
+
+  }
+}
 
 @media screen and (max-width:790px) {
 
@@ -358,9 +397,48 @@ body {
     height: 7%;
   }
 
-  .forecast-container {
-    max-width: 550px;
+  .forecast-main {
+    height: 1500px;
   }
+
+
+
+  .littleIcon {
+    width: 80px;
+  }
+
+  .forecast-container {
+
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 1500px;
+    max-width: 100%;
+    list-style-type: none;
+    background-color: #d9dbff;
+    flex-wrap: wrap;
+
+  }
+
+  .dayobject {
+
+    border-radius: 50px;
+    height: 235px;
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    font-weight: 800;
+    gap: 10px;
+    background-color: #d9dbff;
+
+  }
+
 
 
 }
@@ -377,9 +455,13 @@ body {
     font-size: 0.5rem;
     height: 50px;
   }
+
+  .forecast-container {
+    height: 1500px;
+  }
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:490px) {
 
   .top {
     height: 850px;
@@ -418,10 +500,18 @@ body {
     font-size: 1.1rem;
   }
 
+  .forecast-main {
+    height: 1500px;
+  }
 
   .forecast-container {
-    height: 600px;
-    max-width: 399px;
+    margin: 0px;
+    height: 1300px;
+    width: 350px;
+    flex-wrap: wrap;
+    background-color: transparent;
+    justify-content: center;
+    transition: all 0.8s ease;
   }
 
   .littleIcon {
@@ -429,10 +519,29 @@ body {
   }
 
   .dayobject {
-    max-height: 500px;
+    margin: 5px;
+    font-size: 0.8rem;
+    height: 220px;
+    width: 100px;
+    gap: 5px;
     justify-content: flex-start;
     text-align: left;
-    padding: 5px
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
   }
+
+  .cloud-icon {
+    width: 20%;
+    height: auto;
+  }
+
+  .rain-icon {
+    width: 25%;
+    height: 25%;
+  }
+
+
+
+
 
 }

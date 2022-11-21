@@ -59,26 +59,23 @@ export default function Forecast() {
 
 
 
-
-
-
-
   return <div className='forecast-main'>
-    <ul className='forecast-container'>
-      <li className='dayobject'><h2>{Date(nextday)}<br />{nextday?.week}</h2> {matchIcon(nextday?.ForecastIcon)}{nextday?.forecastWeather}</li>
-      <li className='dayobject'><h2>{Date(nextday2)}<br />{nextday2?.week}</h2> {matchIcon(nextday2?.ForecastIcon)}{nextday2?.forecastWeather}</li>
-      <li className='dayobject'><h2>{Date(nextday3)}<br />{nextday3?.week}</h2> {matchIcon(nextday3?.ForecastIcon)}{nextday3?.forecastWeather}</li></ul>
-    <ul className='forecast-container'>
-      <li className='dayobject'><h2>{Date(nextday4)}<br />{nextday4?.week}</h2> {matchIcon(nextday4?.ForecastIcon)}{nextday4?.forecastWeather}</li>
-      <li className='dayobject'><h2>{Date(nextday5)}<br />{nextday5?.week}</h2> {matchIcon(nextday5?.ForecastIcon)}{nextday5?.forecastWeather}</li>
-      <li className='dayobject'><h2>{Date(nextday6)}<br />{nextday6?.week}</h2> {matchIcon(nextday6?.ForecastIcon)}{nextday6?.forecastWeather}</li></ul>
-    <ul className='forecast-container'>
-      <li className='dayobject'><h2>{Date(nextday7)}<br />{nextday7?.week}</h2> {matchIcon(nextday7?.ForecastIcon)}{nextday7?.forecastWeather}</li>
-      <li className='dayobject'><h2>{Date(nextday8)}<br />{nextday8?.week}</h2> {matchIcon(nextday8?.ForecastIcon)}{nextday8?.forecastWeather}</li>
-      <li className='dayobject'><h2>{Date(nextday9)}<br />{nextday9?.week}</h2> {matchIcon(nextday9?.ForecastIcon)}{nextday9?.forecastWeather}</li>
-    </ul>
+    <ul className='forecast-container' >
+      <li className='dayobject'> <h2 className='title2'>{Date(nextday)} <br /> {nextday?.week}</h2> {matchIcon(nextday?.ForecastIcon)}{nextday?.forecastWeather}</li >
+      <li className='dayobject'><h2>{Date(nextday2)} <br /> {nextday2?.week}</h2> {matchIcon(nextday2?.ForecastIcon)}{nextday2?.forecastWeather}</li>
+      <li className='dayobject'><h2>{Date(nextday3)} <br /> {nextday3?.week}</h2> {matchIcon(nextday3?.ForecastIcon)}{nextday3?.forecastWeather}</li>
+
+      <li className='dayobject'><h2>{Date(nextday4)} <br /> {nextday4?.week}</h2> {matchIcon(nextday4?.ForecastIcon)}{nextday4?.forecastWeather}</li>
+      <li className='dayobject'><h2>{Date(nextday5)} <br /> {nextday5?.week}</h2> {matchIcon(nextday5?.ForecastIcon)}{nextday5?.forecastWeather}</li>
+      <li className='dayobject'><h2>{Date(nextday6)} <br /> {nextday6?.week}</h2> {matchIcon(nextday6?.ForecastIcon)}{nextday6?.forecastWeather}</li>
+
+      <li className='dayobject'><h2>{Date(nextday7)} <br /> {nextday7?.week}</h2> {matchIcon(nextday7?.ForecastIcon)}{nextday7?.forecastWeather}</li>
+      <li className='dayobject'><h2>{Date(nextday8)} <br /> {nextday8?.week}</h2> {matchIcon(nextday8?.ForecastIcon)}{nextday8?.forecastWeather}</li>
+      <li className='dayobject'><h2>{Date(nextday9)} <br /> {nextday9?.week}</h2> {matchIcon(nextday9?.ForecastIcon)}{nextday9?.forecastWeather}</li>
+    </ul >
+
     <div className="updateTime">
       <h1 className="time-title">最後更新時間</h1>
       <h2>{weather.updateTime?.replace('T', ' ').slice(0, 19)}</h2></div>
-  </div>
+  </div >
 }
