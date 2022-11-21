@@ -271,9 +271,8 @@ body {
   }
 }
 
-@media screen and (max-width:2000px) {
+@media screen and (max-width:1500px) {
   .forecast-main {
-    border: medium solid saddlebrown;
     height: 1000px;
   }
 
