@@ -24,7 +24,6 @@ export default function Top() {
 
 
 
-  const data = weather
 
   const tmr = weather.forecastDesc
   const tdy = weather.generalSituation
@@ -98,9 +97,6 @@ export default function Top() {
     </div></div>
 
 
-    <div className="updateTime">
-      <h1 className="time-title">最後更新時間</h1>
-      <h2>{data.updateTime?.replace('T', ' ').slice(0, 19)}</h2></div>
   </div>
 
 }

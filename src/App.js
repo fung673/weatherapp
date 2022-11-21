@@ -5,6 +5,7 @@ import Righttop from './component/RightTop';
 import './App.css';
 import './images/cloud.png'
 import './images/rain.png'
+import Forecast from './component/forecast';
 
 /**const url = "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=flw&lang=tc"
 async function getInfo() {
@@ -26,6 +27,7 @@ export default function App() {
     <div>
       <Warn />
       <Top />
+      <Forecast />
     </div>
   )
 
